@@ -5,7 +5,7 @@ public class PlayerInput {
 
   /**
    * handlePlayerInput method to handle the input from the player and CPU
-   * if the current player is the CPU the mehtod will generate a random number.
+   * if the current player is the CPU the method will generate a random number.
    * 
    * @param tokens, the matrix of tokens already placed
    * @param player, the current player
@@ -14,9 +14,9 @@ public class PlayerInput {
   public String[][] handlePlayerInput(String[][] tokens, String[] tokensSymbols, String player) {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     System.out.println("---- Player " + player + " ----\n");
-    int playerMove = -1; // helper vairable to determine a correct input from the player
+    int playerMove = -1; // helper variable to determine a correct input from the player
     while (playerMove == -1) {
-      // if the player is CPU the playeMove will be asign to a random number between 1
+      // if the player is CPU the playerMove will be assigned to a random number between 1
       // and 7
       if (player == "CPU") {
         playerMove = (int) Math.floor(Math.random() * 7);
@@ -78,7 +78,7 @@ public class PlayerInput {
 
   /**
    * isWinner method to check if a player has won the game
-   * the mothds check 4 connected tokens horizonatlly, veritcally and diagonally
+   * the methods check 4 connected tokens horizontally, vertically and diagonally
    * 
    * @param tokens,      the matrix of tokens already placed
    * @param tokenSymbol, matrix containing the token symbols

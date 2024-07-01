@@ -14,7 +14,7 @@
   }
 
   /**
-   * displayBoard method to display the baord in the console
+   * displayBoard method to display the board in the console
    * 
    * @param tokens its a matrix that stores the tokens placement in the board
    */

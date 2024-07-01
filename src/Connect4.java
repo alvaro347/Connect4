@@ -1,11 +1,11 @@
 /**
  * Connect4 class
- * Handles the game and connecs the different classes
+ * Handles the game and connect the different classes
  */
 
  public class Connect4 {
   private Board board;
-  private String[][] tokens; // Matrix to store the tokens that playes place
+  private String[][] tokens; // Matrix to store the tokens that player place
   private PlayerInput playerInput = new PlayerInput();
   private int player = 1; // Player helper variable to count the turns
   private boolean winner = false;
@@ -43,7 +43,7 @@
         this.winner = playerInput.isWinner(tokens, tokensSymbols[1]);
         player++;
       }
-      // Check if the baord is full at the end of every move
+      // Check if the board is full at the end of every move
       boardFull = board.isBoardFull(tokens);
     }
     gameOver();
