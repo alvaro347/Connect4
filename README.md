@@ -72,7 +72,7 @@ cd connect4-java
 3. Compile the Java files:
 
 ```sh
-cd connect4-java
+javac Main.java Connect4.java Board.java PlayerInput.java
 ```
 
 4. Run the game:
